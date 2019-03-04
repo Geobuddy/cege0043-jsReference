@@ -1,13 +1,13 @@
 function startup() {
-document.addEventListener('DOMContentLoaded', function() {
-trackAndCircle ();
-getEarthquakes();	
-}, false);
+    getPort();		
+	document.addEventListener('DOMContentLoaded', function() {
+	trackAndCircle ();
+	getEarthquakes();	
+	}, false);
 }
 
 function trackAndCircle(){
     trackLocation();
     addPointLinePoly();
-    getPort();
 }
 
